@@ -6,7 +6,7 @@ import { Title } from "./components/messages";
 
 class App extends Component {
   state = {
-    number: 0,
+    number: 7,
     checkPoint: 0,
     captiveFound: false,
     captiveFreed: false

@@ -13,10 +13,10 @@ class Buttons extends Component {
     const ritualSuccess = storyBeginsAt + 7;
     const ritualFailure = storyBeginsAt + 8;
     const afterRitual = storyBeginsAt + 10;
-    const red = storyBeginsAt + 11;
-    const blue = storyBeginsAt + 12;
-    const yellow = storyBeginsAt + 13;
-    const green = storyBeginsAt + 14;
+    const blue = storyBeginsAt + 11;
+    const green = storyBeginsAt + 12;
+    const red = storyBeginsAt + 13;
+    const yellow = storyBeginsAt + 14;
     const demonIsSlayn = storyBeginsAt + 15;
     const conclusion = storyBeginsAt + 16;
 
@@ -27,10 +27,10 @@ class Buttons extends Component {
     const followImp = <Messages nr={4} />;
     const inTime = <Messages nr={5} />;
     const tooLate = <Messages nr={6} />;
-    const redRitual = <Messages nr={8} />;
-    const blueRitual = <Messages nr={9} />;
-    const yellowRitual = <Messages nr={10} />;
-    const greenRitual = <Messages nr={11} />;
+    const blueRitual = <Messages nr={8} />;
+    const greenRitual = <Messages nr={9} />;
+    const redRitual = <Messages nr={10} />;
+    const yellowRitual = <Messages nr={11} />;
     const dead = <Messages nr={12} />;
     const toBeContinnued = <Messages nr={13} />;
     switch (number) {
@@ -60,7 +60,7 @@ class Buttons extends Component {
             </div>
             <div>
               <button
-                className="btn btn-secondary"
+                className="btn btn-secondary mt-2"
                 onClick={() => onVictory(imp)}
               >
                 {followImp}
@@ -142,26 +142,10 @@ class Buttons extends Component {
           <div>
             <div>
               <button
-                className="btn btn-danger m-2"
-                onClick={() => onVictory(red)}
-              >
-                {redRitual}
-              </button>
-            </div>
-            <div>
-              <button
-                className="btn btn-primary mt-2"
+                className="btn btn-primary m-2"
                 onClick={() => onVictory(blue)}
               >
                 {blueRitual}
-              </button>
-            </div>
-            <div>
-              <button
-                className="btn btn-warning mt-2"
-                onClick={() => onVictory(yellow)}
-              >
-                {yellowRitual}
               </button>
             </div>
             <div>
@@ -170,6 +154,22 @@ class Buttons extends Component {
                 onClick={() => onVictory(green)}
               >
                 {greenRitual}
+              </button>
+            </div>
+            <div>
+              <button
+                className="btn btn-danger mt-2"
+                onClick={() => onVictory(red)}
+              >
+                {redRitual}
+              </button>
+            </div>
+            <div>
+              <button
+                className="btn btn-warning mt-2"
+                onClick={() => onVictory(yellow)}
+              >
+                {yellowRitual}
               </button>
             </div>
           </div>

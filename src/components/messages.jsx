@@ -14,10 +14,10 @@ class Messages extends Component {
       "Ruinose ülempreestrinna on alistatud",
       "Ruinose rituaal jõuab lõpule",
       "Ruinoslastel on vang",
-      "Punane rituaal",
       "Sinine rituaal",
-      "Kollane rituaal",
       "Roheline rituaal",
+      "Punane rituaal",
+      "Kollane rituaal",
       "Deemon on surnud",
       "Seiklus jätkub"
     ];
