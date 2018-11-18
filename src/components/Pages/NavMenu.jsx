@@ -6,12 +6,7 @@ export default function NavMenu() {
     <nav>
       <ul>
         <li id="home">
-          <Link name="Home">Home</Link>
-        </li>
-        <li id="chapter">
-          <Link name="Chapter" params={{ id: 1 }}>
-            Chapter
-          </Link>
+          <Link name="Home">Esileht</Link>
         </li>
       </ul>
     </nav>

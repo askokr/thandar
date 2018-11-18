@@ -18,6 +18,17 @@
   margin: 0 2px 0 2px;
 }
 
+.App-header a:hover {
+  text-decoration: none;
+}
+
+a .mainTitle {
+  color: white;
+}
+a .mainTitle:hover {
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { curi } from "@curi/router";
 import Browser from "@hickory/browser";
 import { curiProvider } from "@curi/react-dom";
+import { Link } from "@curi/react-dom";
 
 import routes from "./routes";
 import "bootstrap/dist/css/bootstrap.css";
@@ -22,11 +23,10 @@ ReactDOM.render(
       const { body: Body } = response;
       return (
         <React.Fragment>
-          <header>
-            <header className="App-header">
-              <h1>{Title}</h1>
-            </header>
-            <NavMenu />
+          <header className="App-header">
+            <Link name="Home">
+              <h1 className="mainTitle">{Title}</h1>
+            </Link>
           </header>
           <main>
             <Body response={response} />
@@ -37,10 +37,4 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
-
-// ReactDOM.render(<App />, document.getElementById("root"));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
