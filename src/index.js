@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 
 import { Title } from "./components/Content/messages";
-import NavMenu from "./components/Pages/NavMenu";
+
 import * as serviceWorker from "./serviceWorker";
 
 const history = Browser();
