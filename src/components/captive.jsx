@@ -1,36 +1,32 @@
 import React, { Component } from "react";
-import Messages from "./messages";
-import Story from "./stroy";
+// import Messages from "./Content/messages";
+// import Story from "./Content/stroy";
 
 class Captive extends Component {
   render() {
     const {
       captiveFound,
       captiveFreed,
-      number,
+      id,
       onCaptiveFound,
       onCaptiveFreed
     } = this.props;
-    const captiveFoundMessage = <Messages nr={7} />;
-    const onwards = <Messages nr={2} />;
+    // const captiveFoundMessage = <Messages nr={7} />;
+    // const onwards = <Messages nr={2} />;
 
     if (captiveFound && !captiveFreed) {
       return (
         <div>
-          <Story number={9} />
+          {/* <Story id={9} /> */}
           <div>
             <button className="btn btn-secondary" onClick={onCaptiveFreed}>
-              {onwards}
+              {/* {onwards} */}
             </button>
           </div>
         </div>
       );
     } else if (
-      (number === 6 ||
-        number === 11 ||
-        number === 12 ||
-        number === 13 ||
-        number === 14) &&
+      (id === 6 || id === 11 || id === 12 || id === 13 || id === 14) &&
       !captiveFreed
     ) {
       return (

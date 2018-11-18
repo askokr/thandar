@@ -1,33 +1,46 @@
 import React, { Component } from "react";
-import Story from "./stroy";
-import Buttons from "./buttons";
-import Captive from "./captive";
 
-const story = <Story />;
-console.log(story);
+import { Link } from "@curi/react-dom";
 
 class StoryDisplay extends Component {
+  Paragraphs = content => {
+    return (
+      <div className="content">
+        {content.map(function(paragraph, index) {
+          return <p key={index}>{paragraph}</p>;
+        })}
+      </div>
+    );
+  };
+
+  Buttons = buttons => {
+    let a = "";
+    if (buttons !== undefined) {
+      return (
+        <div className="buttons">
+          {buttons.map(function(button, index) {
+            return (
+              <Link name="Chapter" params={{ id: button.id }} key={index}>
+                <button className={"btn btn-" + button.class}>
+                  {button.message}
+                </button>
+              </Link>
+            );
+          })}
+        </div>
+      );
+    }
+    return a;
+  };
+
   render() {
-    const {
-      captiveFound,
-      captiveFreed,
-      number,
-      onCaptiveFound,
-      onCaptiveFreed,
-      onDefeat,
-      onVictory
-    } = this.props;
+    const { chapter } = this.props;
+
     return (
       <div>
-        <Story number={number} />
-        <Buttons onDefeat={onDefeat} onVictory={onVictory} number={number} />
-        <Captive
-          captiveFound={captiveFound}
-          captiveFreed={captiveFreed}
-          number={number}
-          onCaptiveFound={onCaptiveFound}
-          onCaptiveFreed={onCaptiveFreed}
-        />
+        <h2>{chapter.title}</h2>
+        {this.Paragraphs(chapter.content)}
+        {this.Buttons(chapter.buttons)}
       </div>
     );
   }
