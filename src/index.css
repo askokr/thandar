@@ -15,7 +15,7 @@
 
 .btn {
   border: 1px solid black;
-  margin: 0 2px 0 2px;
+  margin: 3px 3px 3px 3px;
 }
 
 .App-header a:hover {
@@ -42,4 +42,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.captiveBoxText {
+  border: 1px solid black;
+  border-radius: 10px;
 }

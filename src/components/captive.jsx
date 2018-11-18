@@ -1,41 +1,51 @@
 import React, { Component } from "react";
-// import Messages from "./Content/messages";
-// import Story from "./Content/stroy";
+import chapters from "./Content/chapters";
 
 class Captive extends Component {
-  render() {
-    const {
-      captiveFound,
-      captiveFreed,
-      id,
-      onCaptiveFound,
-      onCaptiveFreed
-    } = this.props;
-    // const captiveFoundMessage = <Messages nr={7} />;
-    // const onwards = <Messages nr={2} />;
+  Paragraphs = content => {
+    return (
+      <div className="content">
+        {content.map(function(paragraph, index) {
+          return <p key={index}>{paragraph}</p>;
+        })}
+      </div>
+    );
+  };
 
-    if (captiveFound && !captiveFreed) {
-      return (
-        <div>
-          {/* <Story id={9} /> */}
-          <div>
-            <button className="btn btn-secondary" onClick={onCaptiveFreed}>
-              {/* {onwards} */}
+  render() {
+    const { captive, id, onCaptive } = this.props;
+
+    const chapter = chapters.find(c => c.id === 10);
+
+    if (id === 7 || (id > 11 && id < 16)) {
+      if (!captive.found) {
+        return (
+          <div className="captiveBox">
+            <button
+              className="btn btn-secondary"
+              onClick={() => onCaptive("found")}
+            >
+              Leidsid vangistatud noormehe
             </button>
           </div>
-        </div>
-      );
-    } else if (
-      (id === 6 || id === 11 || id === 12 || id === 13 || id === 14) &&
-      !captiveFreed
-    ) {
-      return (
-        <div>
-          <button className="btn btn-secondary mt-2" onClick={onCaptiveFound}>
-            {captiveFoundMessage}
-          </button>
-        </div>
-      );
+        );
+      } else if (!captive.freed) {
+        return (
+          <div className="captiveBox">
+            <div className="captiveBoxText">
+              {this.Paragraphs(chapter.content)}
+            </div>
+            <button
+              className="btn btn-secondary"
+              onClick={() => onCaptive("freed")}
+            >
+              Noormees on vabastatud
+            </button>
+          </div>
+        );
+      }
+      // captive found and freed
+      return <div />;
     } else {
       return <div />;
     }

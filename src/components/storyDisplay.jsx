@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
 import { Link } from "@curi/react-dom";
+import Captive from "./captive";
 
 class StoryDisplay extends Component {
   Paragraphs = content => {
@@ -14,7 +14,6 @@ class StoryDisplay extends Component {
   };
 
   Buttons = buttons => {
-    let a = "";
     if (buttons !== undefined) {
       return (
         <div className="buttons">
@@ -30,16 +29,16 @@ class StoryDisplay extends Component {
         </div>
       );
     }
-    return a;
   };
 
   render() {
-    const { chapter } = this.props;
+    const { chapter, captive, onCaptive } = this.props;
 
     return (
       <div>
         <h2>{chapter.title}</h2>
         {this.Paragraphs(chapter.content)}
+        <Captive captive={captive} id={chapter.id} onCaptive={onCaptive} />
         {this.Buttons(chapter.buttons)}
       </div>
     );

@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: "Kõrtsikaklus",
     content: [
-      "Nelja Jõe kõrtsis on varajane õhtupooli ning maja on täis inimesi, haldjaid ja veel tosina rassi esindajaid – kõiks söömas, joomas, laulmas ja karjumas. Istute tagumises nurgas, oma tavapärases kohas, naudite sarve õlut ja mõtlete, mida õhtuks süüa, kui järsk mürts ja klirin ukse juures teie tähelepanu köidab. Näete ümber lükatud lauda, katkiseid nõusid ning maha aetud jooke, aga ka üht vihase moega päkapikku tõukamas samavõrd raevunud orki. Jälgite seda kõigest leebe huviga – Nelja Jõe kõrtsis on palju kaklusi.",
+      "Nelja Jõe kõrtsis on varajane õhtupooli ning maja on täis inimesi, haldjaid ja veel tosina rassi esindajaid – kõik söömas, joomas, laulmas ja karjumas. Istute tagumises nurgas, oma tavapärases kohas, naudite sarve õlut ja mõtlete, mida õhtuks süüa, kui järsk mürts ja klirin ukse juures teie tähelepanu köidab. Näete ümber lükatud lauda, katkiseid nõusid ning maha aetud jooke, aga ka üht vihase moega päkapikku tõukamas samavõrd raevunud orki. Jälgite seda kõigest leebe huviga – Nelja Jõe kõrtsis on palju kaklusi.",
       "Siis märkate suitsu.",
       "Mustad pilvjad kombitsad voolavad mööda kõrtsi põrandat. Mil iganes suits mõnd külastajat puutub, ilmub tolle pilku metsikus ning ta kargab paljastatud relvadega püsti. Taipate ruttu, et kõrts on kurja loitsu rünnaku all. Kaklus puhkeb kakluse järel, kuid teie pilgud leiavad suitsu allika: grupp keepides tegelasi ukse juures. Nende rõivad ja maalingud meenutavad Necrode kultuse omi, kuid midagi nende juures on ... valesti. Tõusete püsti ja seate oma relvad valmis. Otsides läbi lämmatava suitsu teed sissetungijate poole lendab jalge ees pilbasteks õllevaat. Pöörate pilgu ülesse ning näete kolme hullunud kõrtsikülastajat enda poole tormamas. Peate neist kiiresti jagu saama, et selle tumeda maagia allikani jõuda."
     ],
@@ -106,7 +106,7 @@ export default [
       {
         id: 7,
         class: "light",
-        message: "Edsi"
+        message: "Edasi"
       }
     ]
   },
@@ -152,7 +152,7 @@ export default [
     ],
     buttons: [
       {
-        id: 1,
+        id: 11,
         class: "light",
         message: "Edasi"
       }
