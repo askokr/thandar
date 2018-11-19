@@ -7,7 +7,11 @@ class StoryDisplay extends Component {
     return (
       <div className="content">
         {content.map(function(paragraph, index) {
-          return <p key={index}>{paragraph}</p>;
+          return (
+            <p key={index} className="paragraphText">
+              {`${paragraph}`}
+            </p>
+          );
         })}
       </div>
     );
@@ -36,7 +40,7 @@ class StoryDisplay extends Component {
 
     return (
       <div>
-        <h2>{chapter.title}</h2>
+        <h2 className="chapterTitle">{chapter.title}</h2>
         {this.Paragraphs(chapter.content)}
         <Captive captive={captive} id={chapter.id} onCaptive={onCaptive} />
         {this.Buttons(chapter.buttons)}

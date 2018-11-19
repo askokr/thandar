@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import chapters from "./Content/chapters";
+import { CaptiveMessages } from "./Content/messages";
 
 class Captive extends Component {
   Paragraphs = content => {
     return (
       <div className="content">
         {content.map(function(paragraph, index) {
-          return <p key={index}>{paragraph}</p>;
+          return (
+            <p key={index} className="paragraphText">
+              {paragraph}
+            </p>
+          );
         })}
       </div>
     );
@@ -22,10 +27,10 @@ class Captive extends Component {
         return (
           <div className="captiveBox">
             <button
-              className="btn btn-secondary"
+              className="btn btn-secondary btn-captive"
               onClick={() => onCaptive("found")}
             >
-              Leidsid vangistatud noormehe
+              {CaptiveMessages.foundMessage}
             </button>
           </div>
         );
@@ -36,10 +41,10 @@ class Captive extends Component {
               {this.Paragraphs(chapter.content)}
             </div>
             <button
-              className="btn btn-secondary"
+              className="btn btn-secondary btn-captive"
               onClick={() => onCaptive("freed")}
             >
-              Noormees on vabastatud
+              {CaptiveMessages.freedMeddage}
             </button>
           </div>
         );

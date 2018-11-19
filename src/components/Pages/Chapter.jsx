@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import chapters from "../Content/chapters";
+import { NoSuchPage } from "../Content/messages";
 
 import StoryDisplay from "../storyDisplay";
 
@@ -29,7 +30,7 @@ class Chapter extends Component {
     if (!chapter) {
       return (
         <div>
-          <h3>Sellist peatükki pole</h3>
+          <h3>{NoSuchPage}</h3>
         </div>
       );
     }
