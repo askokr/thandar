@@ -45,7 +45,6 @@ class RulesPopup extends Component {
           {RulesPopupMessage}
         </button>
         <Modal open={open} onClose={this.onCloseModal} center>
-          <h2 className="rulesTitle">{RulesPopupMessage}</h2>
           <div>{this.rulesList(rules)}</div>
         </Modal>
       </div>

@@ -26,23 +26,6 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      {/* <div className="form-group col-md-4">
-        <label>Kas näitan reegleid</label>
-        <div className="btn-group" role="group" aria-label="Basic example">
-          <button
-            type="button"
-            className="btn btn-secondary btn-toggle btn-toggle-ok"
-          >
-            Jah
-          </button>
-          <button
-            type="button"
-            className="btn btn-secondary btn-toggle btn-toggle-no"
-          >
-            Ei
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 }
