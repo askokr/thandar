@@ -54,10 +54,15 @@ a .mainTitle:hover {
   background-color: rgba(248, 236, 194, 0.4);
 }
 
+.linkBehindButton {
+  visibility: hidden;
+}
+
 .btn {
   border: 2px solid black;
   margin: 5px 5px 5px 5px;
   font-family: "Noto Sans TC", sans-serif;
+  visibility: visible;
 }
 
 .btn:hover {

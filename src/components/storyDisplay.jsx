@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "@curi/react-dom";
+import ReactHtmlParser from "react-html-parser";
 import Captive from "./captive";
 
 class StoryDisplay extends Component {
@@ -9,7 +10,7 @@ class StoryDisplay extends Component {
         {content.map(function(paragraph, index) {
           return (
             <p key={index} className="paragraphText">
-              {`${paragraph}`}
+              {ReactHtmlParser(paragraph)}
             </p>
           );
         })}
@@ -23,7 +24,12 @@ class StoryDisplay extends Component {
         <div className="buttons">
           {buttons.map(function(button, index) {
             return (
-              <Link name="Chapter" params={{ id: button.id }} key={index}>
+              <Link
+                name="Chapter"
+                params={{ id: button.id }}
+                key={index}
+                className="linkBehindButton"
+              >
                 <button className={"btn btn-" + button.class}>
                   {button.message}
                 </button>
