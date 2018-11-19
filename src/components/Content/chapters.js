@@ -13,7 +13,15 @@ export default [
         class: "light",
         message: "Võit!"
       }
-    ]
+    ],
+    rules: {
+      title: "Ettevalmistus",
+      content: [
+        "Esimeseks vastaseks on Kütkestatud Külastajad (<strong>Enthralled Regulars</strong>)",
+        "Moodusta vastase pakk segades kokku esimese võitluse kaardid (<b>1</b>) ja üldised kaardid (<b>S</b>).",
+        "<strong>NB! Kui mängijaid on alla viie, võta iga puuduva mängija kohta üldistest kaartidest välja 3 kaarti!</strong>"
+      ]
+    }
   },
   {
     id: 2,
@@ -27,7 +35,14 @@ export default [
         class: "light",
         message: "Edasi"
       }
-    ]
+    ],
+    rules: {
+      title: "Tasu",
+      content: [
+        "Sega 5 eliksiirikaarti (<b>Elixir</b>) ja jaga igale mängijale üks. <stroong>NB! Eliksiire saab kasutada vaid järgmise võitluse jooksul!</strong> Ülejäänud kaardid pane tagasi karpi.",
+        "Kõik mängijad leiavad klassiaarde. Mängijad segavad oma klassi aardekaardid, tõmbavad neidt ühe ja lisavad selle enda isiklikku pakki (vajadusel võttes mõne kaardi välja).  Ülejäänud kaardid pane tagasi karpi."
+      ]
+    }
   },
   {
     id: 3,
@@ -47,7 +62,14 @@ export default [
         class: "secondary",
         message: "Jälita paharetti"
       }
-    ]
+    ],
+    rules: {
+      title: "Ettevalmistus",
+      content: [
+        "Moodusta vastase pakk teise võitluse jaoks segades kokku teise võitluse kaardid (<b>2</b>) ja mängijate arvule vastav hulk üldisi kaarte (<b>S</b>).",
+        "Kui järgned inimesele, on su vastaseks Ruinose Fanaatik (<b>Ruinos Zealot</b>), kui järgned paharetile, on su vastaseks Ärritav Paharet (<b>Vexing Imp</b>)"
+      ]
+    }
   },
   {
     id: 4,
@@ -91,7 +113,13 @@ export default [
         class: "dark",
         message: "Kaotus"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireegel!",
+      content: [
+        "Kui võidad mõnda paharetist alamat (<b>Imp minion</b>), ära pane seda maha pandud kaartide hulka. Pane need hoopis eraldi mänguvälisesse hunnuksse."
+      ]
+    }
   },
   {
     id: 6,
@@ -108,7 +136,14 @@ export default [
         class: "light",
         message: "Edasi"
       }
-    ]
+    ],
+    rules: {
+      title: "Tasu",
+      content: [
+        "Kõik mängijad leiavad klassiaarde. Mängijad segavad oma klassi aardekaardid, tõmbavad neidt ühe ja lisavad selle enda isiklikku pakki (vajadusel võttes mõne kaardi välja).  Ülejäänud kaardid pane tagasi karpi.",
+        "Kõik mängjad saavad ühe Tegelaspunkti (<b>Character Point</b>), mille eest võivad nad tõsta mõnda enda oskust (<b>skill</b>), võimet (<b>aibility</b>) või hankida endale elupunkte juurde (<b>Aditional Health</b>)."
+      ]
+    }
   },
   {
     id: 7,
@@ -128,7 +163,19 @@ export default [
         class: "dark",
         message: "Ruinose rituaal jõuab lõpule"
       }
-    ]
+    ],
+    rules: {
+      title: "Ettevalmistus",
+      content: [
+        "Vastaseks on Ruinose Ülempreestrinna (<b>Ruinos Archpriestess</b>).",
+        "Moodusta vastase pakk teise võitluse jaoks segades kokku kolmanda võitluse kaardid (<b>3</b>) ja mängijate arvule vastav hulk üldisi kaarte (<b>S</b>).",
+        "Otsi vastase pakist välja Ruinose Fanaatiku (<b>Ruinos Zealot</b>) ja Ärritava Pahareti (<b>Vexing Imp</b>) kaardid. Pane see, kumba sa võitsid eelmise võitluse ajal tagasi karpi, teine alustab võitlust Ruinose Ülempreestrinna ees (<b>Masters's area</b>).",
+        "Mitmed efektid käsevad lisada kaarte Rituaalile. Pane need kaardid eraldi mänguvälisesse rituaalihunnikusse. (Neid läheb võitluse edenedes vaja.)",
+        "Kõik Ruinose Ülempreesrinna võimed on eelistatud (<b>Favoured</b>). Kui vastase pakist tuleb valge kaart, käivituvad kõik tema võimed, ülevalt alla. Iga võime lahenemise järel täida tugu (<b>Market</b>) vastavalt vajadusele",
+        "Kui mitu kaarti vastab võime tingimustele, lisa kõik Rituaali.",
+        "See on mitmeosalone võitlus!  Ülempreestrinna võitmise järel, ära pane oma kaarte ära, võitlus jätkub samade elupunktide ja kaartidega."
+      ]
+    }
   },
   {
     id: 8,
@@ -142,7 +189,14 @@ export default [
         class: "light",
         message: "Edasi"
       }
-    ]
+    ],
+    rules: {
+      title: "Tulemus",
+      content: [
+        "Preestrinnat võites nõrgestasid Rituaali, pane Rituaali pealmised viis kaarti turupaki (<b>Market Deck</b>) alla.",
+        "Preestrinnat võitnud mängija käik jätkub. Ta ei või rünnata ega mõjutada uut vastast, küll aga tema alamaid. "
+      ]
+    }
   },
   {
     id: 9,
@@ -156,14 +210,29 @@ export default [
         class: "light",
         message: "Edasi"
       }
-    ]
+    ],
+    rules: {
+      title: "Ettevalmistus",
+      content: [
+        "Lisa kõik turul olevad kaardid rituaalile.Pane uued kaardid turule.",
+        "Mängija käik jätkub. Ta ei või rünnata ega mõjutada uut vastast, küll aga tema alamaid. "
+      ]
+    }
   },
   {
     id: 10,
     title: "Ruinoslastel on vang",
     content: [
       "Üks lõrisev jünger surub sind vastu seina. Kiire hoobiga surmad oma vaenlase. Tajute miskit endast paremal ja pöördute järgmise ohu poole. Üllatuseks leiate enda eest noormehe, kelle Ruinoslased Nelja Jõe kõrtsist röövisid. Ribadel riietes on ta seina külge aheldatud. Kui vabastate ta köidikutest muutub õud tema pilgus süngeks otsusekindluseks. Ta korjab üles langenud jüngri relva ja koos asute taas võitlusesse."
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "Kui vastase pakist tuleb välja vangi kaart (<b>Captive</b>), pane see kaart vastase kaardi kõrvale, aga mitte mängu",
+        "Kui mõni mängija saab elupunkte, võib ta need endale või läheduses asuva mängija asemel anda vangile. Vang saab ühe käigu jooksul 4 või rohkem elu, läheb vangistatu kaart tema mahapandud kaartide hunnikusse. Seejärel on vang lihtsalt tavaline kaart mängija pakis.",
+        "Vangile ei saa elupunkte anda, kuni vastase või mängija ees on mõni alam."
+      ]
+    }
   },
   {
     id: 11,
@@ -192,7 +261,17 @@ export default [
         class: "warning",
         message: "Kollane rituaal"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "<strong>Enne vastase käiku lahenda rituaal!</strong>",
+        "Võta Rituaali kaardid ja jaga need värvi järgi hunnikutesse",
+        "Kõige rogkemate kaartidega värv määrab rituaali värvi. Kui mõned värvid on viigis, lisa turupakist rituaalile kaarte, kuni mõni värv saavutab edu.",
+        "Iga värviline kaart omab järgnevat mõju: <ul><li><b>Sinine:</b> iga sinise kaardi eest, pane kõigi mägijate seas kõige tugevam kilbiga tšempion maha.</li><li><b>Roheline:</b> alustades aktiivsest mängijast ja liikudes päripäeva, panevad mängijad iga rohelise kaardi eest oma käest ühe juhusliku kaardi maha.</li><li><b>Punane:</b> kõik mängijad kaotavad kahekordse punaste kaartide arvu elupunkte.</li><li><b>Kollane:</b> vastane saab kolmekordse kollaste kaartide arvu elusid juurde.</li></ul>",
+        "Sega kõik rituaali kaardid tagasi turupakki. Sega kõik Ülempreestrinna küljes olnud <b>Mastery</b> kaardid ja kõik vastase mahapandud kaardid tagasi vastase pakki. Mängus olevad alamad jäävad mängu."
+      ]
+    }
   },
   {
     id: 12,
@@ -213,7 +292,15 @@ export default [
         class: "dark",
         message: "Kaotus"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "Kui Naerev Vari heidab varju (<b>Casts a Shadow</b>), pane turupaki ülemine kaart nägu allapoole turu kõige vasema kaardi alla, millel juba pole varju.",
+        "Kui sa ostad turult kaardi, pane selle all olev vari mängust välja.",
+        "Kui mängija peab lisama varju, aga kõigil kaartidel turul juba on vari, ei pea see käik enam varje lisama. Kui vastase võimed on lahenenud, ründavad varjud. Keera kõik viis Varju ümber. Vastane saab viie varju maksumusele võrdselt rünnakupunke. Seejärel ohverda kõik varjud."
+      ]
+    }
   },
   {
     id: 13,
@@ -232,7 +319,14 @@ export default [
         class: "dark",
         message: "Kaotus"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "Kui Ingarash 'kugistab' (<b>Gobble Up</b>) mõne kaardi, lisa see nägu allapoole mänguvälisesse 'kugistatud' kaartide hunnikusse.",
+        "Enne võitluse algust kugistab Ingarash kogu turu."
+      ]
+    }
   },
   {
     id: 14,
@@ -253,7 +347,14 @@ export default [
         class: "dark",
         message: "Kaotus"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "Kui Tapaküüs 'kasvatab oga' (<b>Sprouts a Spike</b>), pane turupaki ülemine kaart nägu ülespoole tema kõrvale ogaks.",
+        "Kui mõni mängija teeb Tapaküünele kahju, saab ta ogade kogumaksumise jagu kagju vastu. Seejärel ohverda kõik ogad. Tšempionid ei kaitse selle kahju eest!"
+      ]
+    }
   },
   {
     id: 15,
@@ -274,7 +375,17 @@ export default [
         class: "dark",
         message: "Kaotus"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "Kui Karaken 'kasvatab lihast turvise' (<b>Forges a Flesh Armor</b>), pane turupaki ülemie kaart nägu ülespoole Karakeni kõrvale 'lihast turviseks'.",
+        "Kui mõni mängija teeb Karakenile kahju ja Karakenil on mõni kaart 'lihast turviseks', peab ta tegema esmalt tegema kahju 'lihast turvisele'.",
+        "Kui turvisekaart saab kahju võrdselt oma maksuvusega, ohverda see.",
+        "Kui turvisekaart ei saa käigu jooksul piisavalt kahju, et see tuleks ohverdada, läheb kahju kaotsi.",
+        "Turvisekaardid pole alamad. Kui mingi kaart teeb 4 kahju vastasele ja kõigile tema alamatele, saab Karaken 4 kahju ja see tuleb jaotada tema turvisekaartide ja tema vahel ülalmainitud reeglite alusel."
+      ]
+    }
   },
   {
     id: 16,
@@ -294,7 +405,14 @@ export default [
         class: "light",
         message: "Edasi"
       }
-    ]
+    ],
+    rules: {
+      title: "Erireeglid",
+      content: [
+        "Lisa deemonile vastav Reliikvia kaart turupakki.",
+        "Kõik mängjad saavad ühe Tegelaspunkti (<b>Character Point</b>), mille eest võivad nad tõsta mõnda enda oskust (<b>skill</b>), võimet (<b>aibility</b>) või hankida endale elupunkte juurde (<b>Aditional Health</b>)."
+      ]
+    }
   },
   {
     id: 17,

@@ -11,4 +11,6 @@ export const HomePageMessages = {
 
 export const NoSuchPage = "Taolist lehte pole";
 
+export const RulesPopupMessage = "Reeglid";
+
 export const Title = "Thandari turm";

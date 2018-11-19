@@ -1,9 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f8ecc2;
@@ -54,6 +51,17 @@ a .mainTitle:hover {
   background-color: rgba(248, 236, 194, 0.4);
 }
 
+.rulesTitle,
+.rulesSubtitle {
+  text-align: center;
+  font-family: "Skranji", cursive;
+  font-weight: 400;
+}
+
+.rulesList {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 .linkBehindButton {
   visibility: hidden;
 }
@@ -81,6 +89,40 @@ a .mainTitle:hover {
   margin: 10px 0 30px 0;
 }
 
+.btn-rules {
+  background-color: lightcyan;
+  margin: 0 0 20px 0;
+}
+
+.btn-toggle {
+  margin: 0 0 0 0;
+  border-width: 3px;
+}
+
+.btn-toggle-ok {
+  border-color: green;
+}
+.btn-toggle-no {
+  border-color: red;
+}
+.btn-toggle-ok-full {
+  background-color: green;
+}
+.btn-toggle-no-full {
+  background-color: red;
+}
+
 .paragraphText {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+.custom-dropdown {
+  padding: 0 0 0 5px;
+  margin-top: 10px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.custom-dropdown select {
+  height: 3em;
+  border: 2px solid black;
 }

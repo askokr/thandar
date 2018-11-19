@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import chapters from "../Content/chapters";
 import { NoSuchPage } from "../Content/messages";
 
-import StoryDisplay from "../storyDisplay";
+import StoryDisplay from "../PageElements/storyDisplay";
 
 class Chapter extends Component {
   state = {

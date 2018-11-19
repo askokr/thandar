@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import chapters from "./Content/chapters";
-import { CaptiveMessages } from "./Content/messages";
+import chapters from "../Content/chapters";
+import { CaptiveMessages } from "../Content/messages";
+import RulesPopup from "./rulesPopup";
 
 class Captive extends Component {
   Paragraphs = content => {
@@ -39,6 +40,7 @@ class Captive extends Component {
           <div className="captiveBox">
             <div className="captiveBoxText">
               {this.Paragraphs(chapter.content)}
+              <RulesPopup rules={chapter.rules} />
             </div>
             <button
               className="btn btn-secondary btn-captive"

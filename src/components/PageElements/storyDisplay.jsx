@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "@curi/react-dom";
 import ReactHtmlParser from "react-html-parser";
 import Captive from "./captive";
+import RulesPopup from "./rulesPopup";
 
 class StoryDisplay extends Component {
   Paragraphs = content => {
@@ -49,6 +50,7 @@ class StoryDisplay extends Component {
         <h2 className="chapterTitle">{chapter.title}</h2>
         {this.Paragraphs(chapter.content)}
         <Captive captive={captive} id={chapter.id} onCaptive={onCaptive} />
+        <RulesPopup rules={chapter.rules} />
         {this.Buttons(chapter.buttons)}
       </div>
     );
