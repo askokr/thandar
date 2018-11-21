@@ -9,8 +9,14 @@ class Chapter extends Component {
     captive: {
       found: false,
       freed: false
-    }
+    },
+    showRules: false
   };
+
+  componentDidMount() {
+    const showRules = this.props.response.location.state;
+    this.setState({ showRules });
+  }
 
   handleCaptive = status => {
     const captive = {
@@ -42,6 +48,7 @@ class Chapter extends Component {
             chapter={chapter}
             captive={this.state.captive}
             onCaptive={this.handleCaptive}
+            showRules={this.state.showRules}
           />
         </div>
       </div>

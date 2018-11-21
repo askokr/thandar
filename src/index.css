@@ -111,6 +111,17 @@ a .mainTitle:hover {
 .btn-toggle-no-full {
   background-color: red;
 }
+.btn-toggle-ok-full:hover {
+  background-color: green;
+}
+.btn-toggle-no-full:hover {
+  background-color: red;
+}
+
+.showRulesQuestion {
+  font-family: "Skranji", cursive;
+  padding-top: 20px;
+}
 
 .paragraphText {
   font-family: "Noto Sans TC", sans-serif;

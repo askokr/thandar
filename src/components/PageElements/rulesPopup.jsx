@@ -35,8 +35,8 @@ class RulesPopup extends Component {
 
   render() {
     const { open } = this.state;
-    const { rules } = this.props;
-    if (rules === undefined) {
+    const { rules, showRules } = this.props;
+    if (rules === undefined || !showRules) {
       return <div />;
     }
     return (

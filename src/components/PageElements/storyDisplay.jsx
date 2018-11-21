@@ -43,14 +43,14 @@ class StoryDisplay extends Component {
   };
 
   render() {
-    const { chapter, captive, onCaptive } = this.props;
+    const { chapter, captive, onCaptive, showRules } = this.props;
 
     return (
       <div>
         <h2 className="chapterTitle">{chapter.title}</h2>
         {this.Paragraphs(chapter.content)}
         <Captive captive={captive} id={chapter.id} onCaptive={onCaptive} />
-        <RulesPopup rules={chapter.rules} />
+        <RulesPopup rules={chapter.rules} showRules={showRules} />
         {this.Buttons(chapter.buttons)}
       </div>
     );

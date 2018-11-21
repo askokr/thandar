@@ -6,7 +6,10 @@ export const CaptiveMessages = {
 export const HomePageMessages = {
   firstEncounter: "Alusta algusest",
   secondEncounter: "Teine võitlus",
-  thirdEncounter: "Kolmas võitlus"
+  thirdEncounter: "Kolmas võitlus",
+  showRulesQuestion: "Kas näitan reegleid?",
+  showRulesYes: "Jah",
+  showRulesNo: "Ei"
 };
 
 export const NoSuchPage = "Taolist lehte pole";

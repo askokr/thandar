@@ -32,7 +32,7 @@ export default [
     buttons: [
       {
         id: 3,
-        class: "light",
+        class: "secondary",
         message: "Edasi"
       }
     ],
@@ -133,7 +133,7 @@ export default [
     buttons: [
       {
         id: 7,
-        class: "light",
+        class: "secondary",
         message: "Edasi"
       }
     ],
@@ -186,7 +186,7 @@ export default [
     buttons: [
       {
         id: 11,
-        class: "light",
+        class: "secondary",
         message: "Edasi"
       }
     ],
@@ -207,7 +207,7 @@ export default [
     buttons: [
       {
         id: 11,
-        class: "light",
+        class: "secondary",
         message: "Edasi"
       }
     ],
@@ -402,7 +402,7 @@ export default [
     buttons: [
       {
         id: 17,
-        class: "light",
+        class: "secondary",
         message: "Edasi"
       }
     ],
