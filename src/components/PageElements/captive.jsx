@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import chapters from "../Content/chapters";
-import { CaptiveMessages } from "../Content/messages";
 import RulesPopup from "./rulesPopup";
 
 class Captive extends Component {
@@ -31,7 +30,7 @@ class Captive extends Component {
               className="btn btn-secondary btn-captive"
               onClick={() => onCaptive("found")}
             >
-              {CaptiveMessages.foundMessage}
+              {chapter.buttons[0].message}
             </button>
           </div>
         );
@@ -46,7 +45,7 @@ class Captive extends Component {
               className="btn btn-secondary btn-captive"
               onClick={() => onCaptive("freed")}
             >
-              {CaptiveMessages.freedMeddage}
+              {chapter.buttons[1].message}
             </button>
           </div>
         );

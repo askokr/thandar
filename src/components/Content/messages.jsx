@@ -1,8 +1,3 @@
-export const CaptiveMessages = {
-  foundMessage: "Leidsid vangistatud noormehe?",
-  freedMeddage: "Noormees on vabastatud!"
-};
-
 export const HomePageMessages = {
   firstEncounter: "Alusta algusest",
   secondEncounter: "Teine võitlus",

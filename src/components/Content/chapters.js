@@ -225,6 +225,16 @@ export default [
     content: [
       "Üks lõrisev jünger surub sind vastu seina. Kiire hoobiga surmad oma vaenlase. Tajute miskit endast paremal ja pöördute järgmise ohu poole. Üllatuseks leiate enda eest noormehe, kelle Ruinoslased Nelja Jõe kõrtsist röövisid. Ribadel riietes on ta seina külge aheldatud. Kui vabastate ta köidikutest muutub õud tema pilgus süngeks otsusekindluseks. Ta korjab üles langenud jüngri relva ja koos asute taas võitlusesse."
     ],
+    buttons: [
+      {
+        class: "primary",
+        message: "Leidsid vangistatud noormehe?"
+      },
+      {
+        class: "primary",
+        message: "Noormees on vabastatud!"
+      }
+    ],
     rules: {
       title: "Erireeglid",
       content: [
