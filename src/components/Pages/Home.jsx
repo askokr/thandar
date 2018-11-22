@@ -46,7 +46,7 @@ class Home extends Component {
               type="button"
               className={
                 "btn btn-secondary btn-toggle btn-toggle-ok" +
-                (this.state.showRules ? "-full" : "")
+                (showRules ? "-full" : "")
               }
               onClick={() => this.handleShowRules(true)}
             >
@@ -56,7 +56,7 @@ class Home extends Component {
               type="button"
               className={
                 "btn btn-secondary btn-toggle btn-toggle-no" +
-                (this.state.showRules ? "" : "-full")
+                (showRules ? "" : "-full")
               }
               onClick={() => this.handleShowRules(false)}
             >

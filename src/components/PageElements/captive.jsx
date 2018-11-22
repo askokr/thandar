@@ -19,7 +19,7 @@ class Captive extends Component {
   };
 
   render() {
-    const { captive, id, onCaptive } = this.props;
+    const { captive, id, onCaptive, showRules } = this.props;
 
     const chapter = chapters.find(c => c.id === 10);
 
@@ -40,7 +40,7 @@ class Captive extends Component {
           <div className="captiveBox">
             <div className="captiveBoxText">
               {this.Paragraphs(chapter.content)}
-              <RulesPopup rules={chapter.rules} />
+              <RulesPopup rules={chapter.rules} showRules={showRules} />
             </div>
             <button
               className="btn btn-secondary btn-captive"

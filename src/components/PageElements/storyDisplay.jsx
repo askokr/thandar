@@ -49,7 +49,12 @@ class StoryDisplay extends Component {
       <div>
         <h2 className="chapterTitle">{chapter.title}</h2>
         {this.Paragraphs(chapter.content)}
-        <Captive captive={captive} id={chapter.id} onCaptive={onCaptive} />
+        <Captive
+          captive={captive}
+          id={chapter.id}
+          onCaptive={onCaptive}
+          showRules={showRules}
+        />
         <RulesPopup rules={chapter.rules} showRules={showRules} />
         {this.Buttons(chapter.buttons)}
       </div>
