@@ -27,7 +27,7 @@ class Captive extends Component {
         return (
           <div className="captiveBox">
             <button
-              className="btn btn-secondary btn-captive"
+              className={"btn btn-" + chapter.buttons[0].class + " btn-captive"}
               onClick={() => onCaptive("found")}
             >
               {chapter.buttons[0].message}
@@ -42,7 +42,7 @@ class Captive extends Component {
               <RulesPopup rules={chapter.rules} showRules={showRules} />
             </div>
             <button
-              className="btn btn-secondary btn-captive"
+              className={"btn btn-" + chapter.buttons[1].class + " btn-captive"}
               onClick={() => onCaptive("freed")}
             >
               {chapter.buttons[1].message}
